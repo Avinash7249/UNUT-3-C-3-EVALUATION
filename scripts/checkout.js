@@ -16,6 +16,7 @@ function confirm(){
         total=Number(walletammount)-total;
         walletammount.splice(0,walletammount.length)
        walletammount.push(total);
+       
         localStorage.setItem("amount",JSON.stringify(walletammount))
         alert("Booking Successful!")
         window.location.reload()
